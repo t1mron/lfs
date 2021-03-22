@@ -32,6 +32,7 @@
  mkdir -pv /usr/share/fonts/unifont &&
     gunzip -c unifont-13.0.03.pcf.gz > \
      /usr/share/fonts/unifont/unifont.pcf
+ 
  #6. Grub 2.04
  
  ./configure --prefix=/usr  \
