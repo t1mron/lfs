@@ -41,3 +41,15 @@
         --disable-efiemu       \
         --with-platform=efi    \
         --disable-werror
+
+#systemd
+ #1. libxml2
+ https://linuxfromscratch.ru/blfs/view/systemd/general/libxml2.html
+ #2. libxslt
+ https://linuxfromscratch.ru/blfs/view/systemd/general/libxslt.html
+ #3. PCRE
+ https://linuxfromscratch.ru/blfs/view/systemd/general/pcre.html
+ #4. GLib 
+ https://linuxfromscratch.ru/blfs/view/systemd/general/glib2.html
+ ---------------------------------------
+ 
