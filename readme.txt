@@ -1,3 +1,42 @@
+Данные действия совершаются в конце 3.7
+
+# Поддержка пакетного менеджера pacman
+ #1. zlib
+ ./configure --prefix=/tools
+ make
+ make install
+
+ #2. libarchive
+ https://www.libarchive.org/downloads/libarchive-3.5.1.tar.xz
+ ./configure --prefix=/tools --without-xml2 --disable-shared
+ make
+ make install
+ 
+ #3. pkg-config
+ ./configure --prefix=/tools            \
+            --with-internal-glib       \
+            --disable-compile-warnings \
+            --disable-host-tool        \
+            --disable-shared           \
+            --docdir=/tools/share/doc/pkg-config-0.29.2
+ make
+ make install
+ 
+ #4. libcap 
+ make
+ make RAISE_SETFCAP=no lib=lib prefix=/tools install
+ chmod -v 755 /tools/lib/libcap.so
+ 
+ #5. fakeroot
+ https://deb.debian.org/debian/pool/main/f/fakeroot/fakeroot_1.25.3.orig.tar.gz
+ 
+ #6. pacman 
+
+
+
+
+
+
 # add efi
  #1. dosfstools 
  http://www.linuxfromscratch.org/blfs/view/svn/postlfs/dosfstools.html
