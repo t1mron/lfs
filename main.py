@@ -30,7 +30,7 @@ class tkinter:
             if bool(self.terminal("pacman -Qu")) is True:
                 self.btn.destroy()
                 self.canvas.destroy()
-                self.play_mp3(path)
+                #self.play_mp3(path)  #не работает на виртуалке 
                 self.xterm = Frame(main)
                 self.xterm.pack(fill = BOTH, expand = YES) 
                 self.terminal(f"xterm -into {self.xterm.winfo_id()} -geometry 99x45 -e 'sudo pacman --noconfirm -Syu && reboot;bash'",True)
